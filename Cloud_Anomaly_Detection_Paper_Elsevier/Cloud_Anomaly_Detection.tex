@@ -1,0 +1,132 @@
+%\documentclass[journal]{IEEEtran}
+%\documentclass[10pt,journal,compsoc]{IEEEtran}
+%\documentclass[10pt,journal,compsoc]{IEEEtran}
+%\documentclass[journal,comsoc]{IEEEtran}
+\documentclass[preprint]{elsarticle}
+\pdfoutput=1
+\usepackage{epsfig}
+\usepackage{subfigure}
+\usepackage{calc}
+\usepackage{amssymb}
+\usepackage{amstext}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{pslatex}
+\usepackage{url}
+\usepackage[small]{caption}
+\usepackage{todonotes}
+
+\usepackage{enumerate} %enumerate with 1. 2. etc.
+
+% ========= package for rotating table =======
+\usepackage{lscape} 
+
+% ======= following packages used for generating pseudocode of algorithms 
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{pifont}
+%===================
+
+% ======= package for degree sign ==========
+\usepackage{gensymb}
+
+%===== package for adding biography images =========
+\usepackage{graphicx}
+\graphicspath{ {bioimages/} }
+
+%======== package for creating the table =================
+\usepackage{tabularx,ragged2e,booktabs}
+%\newcolumntype{L}{>{\RaggedRight\arraybackslash}X} % ragged-right version off "X"
+
+% ======== package for creating coloured columns in tables.. ==========
+\usepackage{xcolor,colortbl}
+
+\subfigtopskip=0pt
+\subfigcapskip=0pt
+\subfigbottomskip=0pt
+
+\journal{Big Data Research}
+
+\begin{document}
+
+\begin{frontmatter}
+
+%% ======= TITLE =========f
+
+%\title{RAIDS: Real-time Anomaly-based Intrusion Detection System for Cloud Data Centres}
+%\title{ADDoSS: Anomaly-based DDoS Attack Detection System}
+%\title{Reducing False Positives in DDoS Attack Detection}
+\title{RADS: Real-time Anomaly Detection System for Cloud Data Centres}
+%\title{\LARGE RADS: Real-time Anomaly Detection System for Cloud Data Centres}
+
+
+%% ======= AUTHORS =========
+%\author{Sakil Barbhuiya, Zafeirios Papazachos, Peter Kilpatrick and Dimitrios S. Nikolopoulos
+%\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem S. Barbhuiya, Z. Papazachos, P. Kilpatrick, and D. S. Nikolopoulos are with 
+%the School of Electronics, Electrical Engineering and Computer Science, Queen's University Belfast, Belfast, United Kingdom.
+%Email: \{sakil.barbhuiya, z.papazachos, p.kilpatrick, d.nikolopoulos\}@qub.ac.uk}}
+
+\author[1]{Sakil~Barbhuiya\corref{cor1}}
+\ead{sakil.barbhuiya@qub.ac.uk}
+
+\author[1]{Zafeirios~Papazachos}
+\ead{z.papazachos@qub.ac.uk}
+
+\author[1]{Peter~Kilpatrick}
+\ead{p.kilpatrick@qub.ac.uk}
+
+\author[2]{Dimitrios~S.~Nikolopoulos}
+\ead{dsn@vt.edu}
+
+\cortext[cor1]{Corresponding author}
+\address[1]{Queen's University Belfast, United Kingdom}
+\address[2]{Virginia Tech, United States\\ }
+
+
+%% ======= ABSTRACT =========
+%\IEEEtitleabstractindextext{
+\begin{abstract}
+\input{sections/abstract}
+\end{abstract}
+
+%% ======= KEYWORDS =========
+\begin{keyword}
+Cloud, Anomaly Detection, Cybersecurity Attack, One Class Classification
+\end{keyword}
+
+\end{frontmatter}
+
+%% ======= SECTIONS  =========f
+
+\input{sections/introduction}
+\input{sections/problem_definition}
+\input{sections/approach}
+\input{sections/overview}
+\input{sections/framework}
+\input{sections/evaluation}
+\input{sections/related_work}
+\input{sections/conclusions}
+
+%% ======= ACKNOWLEDGEMENT =========ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffFfffffffffffffffffFffffffffffffFffFfffffffffffffFf
+% use section* for acknowledgment
+%\ifCLASSOPTIONcompsoc
+%  % The Computer Society usually uses the plural form
+\section*{Acknowledgments}
+%\else
+%  % regular IEEE prefers the singular form
+%  \section*{Acknowledgment}
+%\fi
+\noindent This work has received funding from the European Commission under the European Union's Seventh Framework Programme (grant agreement 610811 - CACTOS project), the Horizon 2020 research and innovation programme (grant agreement 687628 - VINEYARD project), and the UK Engineering and Physical Sciences Research Council  (grant agreement EP/L004232/1 - ENPOWER project)
+
+
+%\vfill
+\bibliographystyle{IEEEtran}  
+%\bibliographystyle{elsarticle-num} 
+
+\section*{References}
+
+\bibliography{references}
+%\vfill
+
+\end{document}

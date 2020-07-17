@@ -1,0 +1,8 @@
+*.aux
+*.blg
+*.log
+*.bbl
+*converted-to.pdf
+*latexmk
+*fls
+Smartphone_Anomaly_Detection.synctex.gz

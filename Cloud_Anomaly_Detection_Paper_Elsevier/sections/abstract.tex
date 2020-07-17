@@ -1,0 +1,18 @@
+Cybersecurity attacks in Cloud data centres are increasing alongside the growth of the Cloud services market. 
+%Cloud security attacks are increasing alongside the growth of the Cloud services market. 
+Existing research proposes a number of anomaly detection systems for detecting such attacks. 
+%These anomaly-based IDSs encounter a number of challenges, specifically due to the unknown behaviour of the attacks and the occurrence of genuine Cloud workload spikes, which must be distinguished from attacks. 
+However, these systems encounter a number of challenges, specifically due to the unknown behaviour of the attacks and the occurrence of genuine Cloud workload spikes, which must be distinguished from attacks. 
+In this paper, we discuss these challenges and investigate the issues with the existing Cloud anomaly detection approaches. Then, we propose a Real-time Anomaly Detection System (RADS) for Cloud data centres, which uses a one class classification algorithm and a window-based time series analysis to address the challenges. 
+Specifically, RADS can detect VM-level anomalies occurring due to DDoS and cryptomining attacks.
+%Specifically, RADS can detect DDoS and backdoor channel attacks in a Cloud data centre. 
+%which can detect anoma- lies occurring due to DDoS and cryptomining attacks. 
+%real-time with high accuracy and low false positive rates. 
+%We evaluate the performance of RAIDS both in real-time and offline. The real-time evaluation was performed in a lab-based Cloud data centre whereas the offline evaluation was carried out with real-world Cloud workload traces.  
+We evaluate the performance of RADS by running lab-based experiments and by using real-world Cloud workload traces. %The lab-based experiments were performed in an OpenStack based Cloud data centre.
+%Real-world Cloud workload traces were collected from an online repository  
+Evaluation results demonstrate that RADS can achieve 90-95\% accuracy with a low false positive rate of 0-3\%.
+%The results further reveal that RADS experiences fewer false positives while using the proposed data pre-processing approach than when using state-of-the-art average or entropy based data pre-processing approaches.
+The results further reveal that RADS experiences fewer false positives when using its window-based time series analysis in comparison to using state-of-the-art average or entropy based analysis.
+
+
